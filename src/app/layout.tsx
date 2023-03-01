@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={clsx(
-          "max-w-screen-mobile desktop:max-w-screen-desktop",
+          "mx-auto max-w-screen-mobile bg-neutral-100/5 text-sm leading-relaxed desktop:max-w-screen-desktop desktop:text-base",
           primaryFont.className
         )}
       >
