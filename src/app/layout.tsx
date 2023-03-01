@@ -1,3 +1,5 @@
+import { primaryFont } from "@/app/fonts";
+import clsx from "clsx";
 import "./globals.css";
 
 export const metadata = {
@@ -12,7 +14,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body
+        className={clsx(
+          "max-w-screen-mobile desktop:max-w-screen-desktop",
+          primaryFont.className
+        )}
+      >
+        {children}
+      </body>
     </html>
   );
 }
